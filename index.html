@@ -31,9 +31,22 @@
 		</script> -->
 	</head>
 
-	<body>
+<!-- 	<body>
 		<audio autoplay="autoplay" loop="loop">
-	<source src="renxi.mp3" type="audio/mp3" /></audio>
+	<source src="renxi.mp3" type="audio/mp3" /></audio> -->
+	
+	<audio autoplay loop muted id="bgMusic">
+	    <source src="https://easonlau61.github.io/renxi.mp3" type="audio/mpeg">
+	    Your browser does not support the audio element.
+	</audio>
+	<button onclick="toggleMute()">Toggle Sound</button>
+	
+	<script>
+	function toggleMute() {
+	    var audio = document.getElementById('bgMusic');
+	    audio.muted = !audio.muted;
+	}
+	</script>
 		<div id="main">
 			<div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
 			<div id="wrap">
